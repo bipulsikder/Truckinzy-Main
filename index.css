@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes truck-drive {
+  0% {
+    left: -10%;
+    transform: translateY(-50%) scaleX(1);
+  }
+  45% {
+    transform: translateY(-50%) scaleX(1);
+  }
+  50% {
+    left: 110%;
+    transform: translateY(-50%) scaleX(1);
+  }
+  51% {
+    transform: translateY(-50%) scaleX(-1);
+  }
+  95% {
+    transform: translateY(-50%) scaleX(-1);
+  }
+  100% {
+    left: -10%;
+    transform: translateY(-50%) scaleX(-1);
+  }
+}
+
+.animate-truck {
+  animation: truck-drive 20s linear infinite;
+  top: 50%;
+}
+
+
+
+.bg-grid-pattern {
+  background-image: linear-gradient(to right, #e5e7eb 1px, transparent 1px),
+                    linear-gradient(to bottom, #e5e7eb 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Add radial gradient background */
+.bg-gradient-radial {
+  background-image: radial-gradient(circle at center, var(--tw-gradient-from) 0%, var(--tw-gradient-via) 50%, var(--tw-gradient-to) 100%);
+}
