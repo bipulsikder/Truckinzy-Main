@@ -59,37 +59,7 @@ export const AboutUsModal: React.FC<AboutUsModalProps> = ({ isOpen, onClose }) =
             </p>
           </div>
 
-          {/* Features Grid */}
-          {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            <div className="flex items-start space-x-4 p-4 bg-blue-50 rounded-lg">
-              <Users className="w-6 h-6 text-blue-600 flex-shrink-0" />
-              <div>
-                <h3 className="font-semibold text-gray-800">Expert Team</h3>
-                <p className="text-sm text-gray-600">Industry professionals with deep logistics expertise</p>
-              </div>
-            </div>
-            <div className="flex items-start space-x-4 p-4 bg-blue-50 rounded-lg">
-              <Truck className="w-6 h-6 text-blue-600 flex-shrink-0" />
-              <div>
-                <h3 className="font-semibold text-gray-800">Fleet Management</h3>
-                <p className="text-sm text-gray-600">Comprehensive fleet and workforce solutions</p>
-              </div>
-            </div>
-            <div className="flex items-start space-x-4 p-4 bg-blue-50 rounded-lg">
-              <Clock className="w-6 h-6 text-blue-600 flex-shrink-0" />
-              <div>
-                <h3 className="font-semibold text-gray-800">Fast Hiring</h3>
-                <p className="text-sm text-gray-600">Streamlined recruitment process</p>
-              </div>
-            </div>
-            <div className="flex items-start space-x-4 p-4 bg-blue-50 rounded-lg">
-              <HeadphonesIcon className="w-6 h-6 text-blue-600 flex-shrink-0" />
-              <div>
-                <h3 className="font-semibold text-gray-800">24/7 Support</h3>
-                <p className="text-sm text-gray-600">Round-the-clock assistance</p>
-              </div>
-            </div>
-          </div> */}
+
         </div>
 
         {/* Footer */}
