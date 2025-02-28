@@ -46,8 +46,8 @@ export const Header = () => {
             <img
               src={
                 isScrolled
-                  ? "https://i.postimg.cc/j20dnktx/log0-def.png"
-                  : "https://i.postimg.cc/hGNKN3JL/log-def.png"
+                  ? "https://i.postimg.cc/D0W2Z5sY/log0-def.png"
+                  : "https://i.postimg.cc/3x2xmLqs/log-def.png"
               }
               alt="Truckinzy Logo"
               className="transition-all duration-300 h-10 w-15"
