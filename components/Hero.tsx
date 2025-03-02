@@ -3,6 +3,7 @@ import Typed from 'typed.js';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Truck, Users, Building2, CheckCircle, ArrowRight, Award } from 'lucide-react';
 import { ContactModal } from './ContactModal';
+import { SEOOptimizedText } from './SEOOptimizedText';
 
 const stats = [
   { 
@@ -38,6 +39,8 @@ export const Hero = () => {
           'Hiring Made Simple for Logistics.',
           'Simplify Your Logistics Workforce.',
           'Connect with Top Industry Talent.',
+          'End-to-End Supply Chain Recruitment.',
+          'Specialized Logistics Talent Solutions.',
         ],
         typeSpeed: 40,
         backSpeed: 30,
@@ -51,6 +54,14 @@ export const Hero = () => {
       return () => typed.destroy();
     }
   }, []);
+
+  const scrollToSection = (event: React.MouseEvent, sectionId: string) => {
+    event.preventDefault();
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -75,6 +86,9 @@ export const Hero = () => {
 
   return (
     <div className="relative min-h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 overflow-hidden">
+      {/* SEO-optimized hidden text */}
+      <SEOOptimizedText />
+      
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute w-full h-full">
@@ -113,7 +127,7 @@ export const Hero = () => {
               </div>
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
-              Connect with top logistics talent and certified drivers. Streamline your hiring process with our industry-leading platform.
+              Connect with top logistics talent across all levels—from fleet managers and warehouse executives to supply chain specialists and maintenance experts. Streamline your hiring process with our industry-leading platform.
             </p>
           </motion.div>
 
@@ -135,9 +149,9 @@ export const Hero = () => {
               whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(255,165,0,0.3)" }}
               whileTap={{ scale: 0.95 }}
               className="group px-8 py-4 bg-orange-500 text-white rounded-lg font-semibold shadow-lg transition-all duration-300 flex items-center justify-center gap-2"
-              onClick={() => setShowDriverModal(true)}
+              onClick={(e) => scrollToSection(e, "job-listings")}
             >
-              Find Truck Drivers
+              Find Logistics Jobs
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </motion.button>
           </motion.div>
