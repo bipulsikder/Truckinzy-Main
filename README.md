@@ -1,6 +1,6 @@
 # Truckinzy - Logistics Hiring Platform
 
-
+Live view at : truckinzy.com
 ## Overview
 
 Truckinzy is India's premier logistics hiring platform that connects qualified drivers and logistics professionals with top companies. The platform streamlines the hiring process in the logistics and transportation sector.
